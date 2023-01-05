@@ -12,6 +12,8 @@ import withLocalTmpDir from 'with-local-tmp-dir'
 
 console.log(pEvent)
 console.log(kill)
+console.log(buildNuxt)
+console.log(loadNuxt)
 
 export default () => ({
   before: async () => {
@@ -34,16 +36,19 @@ export default () => ({
     return function () {
       return withLocalTmpDir(async () => {
         await outputFiles({
+          'nuxt.config.js': `export default ${JSON.stringify(config.config)}`,
           'package.json': JSON.stringify({ type: 'module' }),
           ...config.files,
         })
         if (config.nuxtVersion === 3) {
           // Loads package.json of nuxt, nuxt3 or nuxt-edge from cwd
           // Does not work with symlink (Cannot read property send of undefined)
-          const nuxt = await loadNuxt({ config: config.config })
-          await buildNuxt(nuxt)
-          /* const childProcess = execaCommand('nuxt start', { all: true }) */
-          /* await pEvent(
+          // const nuxt = await loadNuxt({ config: config.config })
+          // await buildNuxt(nuxt)
+          await execaCommand('nuxt build')
+
+          const childProcess = execaCommand('nuxt start', { all: true })
+          await pEvent(
             childProcess.all,
             'data',
             data => data.toString() === 'Listening http://[::]:3000\n'
@@ -52,7 +57,7 @@ export default () => ({
             await config.test.call(this)
           } finally {
             await kill(childProcess.pid)
-          } */
+          }
         } else {
           // Loads @nuxt/vue-app from cwd
           await fs.symlink(
