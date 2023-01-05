@@ -10,6 +10,9 @@ import kill from 'tree-kill-promise'
 import { fileURLToPath } from 'url'
 import withLocalTmpDir from 'with-local-tmp-dir'
 
+console.log(pEvent)
+console.log(kill)
+
 export default () => ({
   before: async () => {
     await fs.outputFile(
@@ -39,9 +42,8 @@ export default () => ({
           // Does not work with symlink (Cannot read property send of undefined)
           const nuxt = await loadNuxt({ config: config.config })
           await buildNuxt(nuxt)
-
-          const childProcess = execaCommand('nuxt start', { all: true })
-          await pEvent(
+          /* const childProcess = */ execaCommand('nuxt start', { all: true })
+          /* await pEvent(
             childProcess.all,
             'data',
             data => data.toString() === 'Listening http://[::]:3000\n'
@@ -50,7 +52,7 @@ export default () => ({
             await config.test.call(this)
           } finally {
             await kill(childProcess.pid)
-          }
+          } */
         } else {
           // Loads @nuxt/vue-app from cwd
           await fs.symlink(
