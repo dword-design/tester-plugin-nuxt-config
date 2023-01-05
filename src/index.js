@@ -10,8 +10,6 @@ import kill from 'tree-kill-promise'
 import { fileURLToPath } from 'url'
 import withLocalTmpDir from 'with-local-tmp-dir'
 
-console.log(pEvent)
-console.log(kill)
 console.log(buildNuxt)
 console.log(loadNuxt)
 
