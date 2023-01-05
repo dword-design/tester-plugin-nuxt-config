@@ -31,7 +31,6 @@ export default () => ({
     return function () {
       return withLocalTmpDir(async () => {
         await outputFiles({
-          'nuxt.config.js': `export default ${JSON.stringify(config.config)}`,
           'package.json': JSON.stringify({ type: 'module' }),
           ...config.files,
         })
