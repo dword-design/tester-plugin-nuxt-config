@@ -4,5 +4,6 @@
   "depcheckConfig": {
     "ignoreMatches": ["nuxt"]
   },
+  "nodeVersion": 14,
   "supportedNodeVersions": [14, 16]
 }
