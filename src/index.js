@@ -9,6 +9,7 @@ import P from 'path'
 import kill from 'tree-kill-promise'
 import { fileURLToPath } from 'url'
 import withLocalTmpDir from 'with-local-tmp-dir'
+import { delay } from '@dword-design/functions'
 
 export default () => ({
   before: async () => {
@@ -49,6 +50,7 @@ export default () => ({
             await config.test.call(this)
           } finally {
             await kill(childProcess.pid)
+						await delay(10000)
           }
         } else {
           // Loads @nuxt/vue-app from cwd
