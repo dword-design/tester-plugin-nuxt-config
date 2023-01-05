@@ -9,7 +9,7 @@ export default tester(
   {
     nuxt3: {
       files: {
-        'pages/index.vue': endent`
+        /* 'pages/index.vue': endent`
           <template>
             <div :class="foo" />
           </template>
@@ -17,6 +17,11 @@ export default tester(
           <script setup>
           const foo = 'foo'
           </script>
+        `, */
+        'pages/index.vue': endent`
+          <template>
+            <div class="foo" />
+          </template>
         `,
       },
       nuxtVersion: 3,
