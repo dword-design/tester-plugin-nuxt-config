@@ -1,3 +1,4 @@
+import { delay } from '@dword-design/functions'
 import { buildNuxt, loadNuxt } from '@nuxt/kit'
 import { execaCommand } from 'execa'
 import expect from 'expect'
@@ -9,7 +10,6 @@ import P from 'path'
 import kill from 'tree-kill-promise'
 import { fileURLToPath } from 'url'
 import withLocalTmpDir from 'with-local-tmp-dir'
-import { delay } from '@dword-design/functions'
 
 export default () => ({
   before: async () => {
@@ -41,16 +41,13 @@ export default () => ({
           const nuxt = await loadNuxt({ config: config.config })
           await buildNuxt(nuxt)
 
-          const childProcess = execaCommand(
-            `node ${P.join('.output', 'server', 'index.mjs')}`,
-            { all: true }
-          )
+          const childProcess = execaCommand('nuxt start', { all: true })
           await pEvent(childProcess.all, 'data')
+          await delay(5000)
           try {
             await config.test.call(this)
           } finally {
             await kill(childProcess.pid)
-						await delay(10000)
           }
         } else {
           // Loads @nuxt/vue-app from cwd

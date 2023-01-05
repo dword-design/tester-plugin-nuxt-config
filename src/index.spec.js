@@ -31,6 +31,7 @@ export default tester(
     },
     works: {
       config: {
+        build: { quiet: true },
         plugins: ['~/plugins/foo.js'],
       },
       files: {
