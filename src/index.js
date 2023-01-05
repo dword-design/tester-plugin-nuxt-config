@@ -10,9 +10,6 @@ import kill from 'tree-kill-promise'
 import { fileURLToPath } from 'url'
 import withLocalTmpDir from 'with-local-tmp-dir'
 
-console.log(buildNuxt)
-console.log(loadNuxt)
-
 export default () => ({
   before: async () => {
     await fs.outputFile(
@@ -41,6 +38,8 @@ export default () => ({
         if (config.nuxtVersion === 3) {
           // Loads package.json of nuxt, nuxt3 or nuxt-edge from cwd
           // Does not work with symlink (Cannot read property send of undefined)
+          console.log(buildNuxt)
+          console.log(loadNuxt)
           // const nuxt = await loadNuxt({ config: config.config })
           // await buildNuxt(nuxt)
           await execaCommand('nuxt build')
