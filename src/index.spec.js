@@ -7,6 +7,16 @@ import self from './index.js'
 
 export default tester(
   {
+    'build error': {
+      config: {
+        modules: [
+          () => {
+            throw new Error('foo')
+          },
+        ],
+      },
+      error: 'foo',
+    },
     nuxt3: {
       files: {
         'pages/index.vue': endent`
@@ -31,7 +41,6 @@ export default tester(
     },
     works: {
       config: {
-        build: { quiet: true },
         plugins: ['~/plugins/foo.js'],
       },
       files: {

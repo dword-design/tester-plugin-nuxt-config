@@ -1,5 +1,5 @@
 import { execaCommand } from 'execa'
-import expect from 'expect'
+import { expect } from 'expect'
 import fs from 'fs-extra'
 import { build, loadNuxt } from 'nuxt'
 import ora from 'ora'
@@ -80,6 +80,7 @@ export default () => ({
           const Builder = nuxtImport.Builder
 
           const nuxt = new Nuxt({
+            build: { quiet: true },
             dev: false,
             telemetry: false,
             ...config.config,
