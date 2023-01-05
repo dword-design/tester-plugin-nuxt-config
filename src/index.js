@@ -1,4 +1,3 @@
-import { delay } from '@dword-design/functions'
 import { buildNuxt, loadNuxt } from '@nuxt/kit'
 import { execaCommand } from 'execa'
 import expect from 'expect'
@@ -42,8 +41,11 @@ export default () => ({
           await buildNuxt(nuxt)
 
           const childProcess = execaCommand('nuxt start', { all: true })
-          await pEvent(childProcess.all, 'data')
-          await delay(5000)
+          await pEvent(
+            childProcess.all,
+            'data',
+            data => data.toString() === 'Listening http://[::]:3000\n'
+          )
           try {
             await config.test.call(this)
           } finally {
