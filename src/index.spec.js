@@ -39,6 +39,42 @@ export default tester(
         expect(dom.window.document.querySelectorAll('.foo').length).toEqual(1)
       },
     },
+    'nuxt3: config': {
+      config: {
+        modules: ['./modules/foo'],
+      },
+      files: {
+        'modules/foo': {
+          'index.js': endent`
+            import { addPlugin, createResolver } from '@nuxt/kit'
+
+            const resolver = createResolver(import.meta.url)
+
+            export default () => addPlugin(resolver.resolve('./plugin.js'), { append: true })
+          `,
+          'plugin.js':
+            "export default (context, inject) => inject('foo', 'foo')",
+        },
+        'pages/index.vue': endent`
+          <template>
+            <div :class="$foo" />
+          </template>
+
+          <script setup>
+          const { $foo } = useNuxtApp()
+          </script>
+        `,
+      },
+      nuxtVersion: 3,
+      test: async () => {
+        const dom = new JSDOM(
+          (await axios.get('http://localhost:3000'))
+            |> await
+            |> property('data')
+        )
+        expect(dom.window.document.querySelectorAll('.foo').length).toEqual(1)
+      },
+    },
     works: {
       config: {
         plugins: ['~/plugins/foo.js'],
