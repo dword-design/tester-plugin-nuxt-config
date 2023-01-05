@@ -1,4 +1,4 @@
-import { buildNuxt, loadNuxt } from '@nuxt/kit'
+import { loadNuxt } from '@nuxt/kit'
 import { execaCommand } from 'execa'
 import expect from 'expect'
 import fs from 'fs-extra'
@@ -40,8 +40,8 @@ export default () => ({
         if (config.nuxtVersion === 3) {
           // Loads package.json of nuxt, nuxt3 or nuxt-edge from cwd
           // Does not work with symlink (Cannot read property send of undefined)
-          const nuxt = await loadNuxt({ config: config.config })
-          await buildNuxt(nuxt)
+          await loadNuxt({ config: config.config })
+          // await buildNuxt(nuxt)
           /* const childProcess = execaCommand('nuxt start', { all: true }) */
           /* await pEvent(
             childProcess.all,
