@@ -42,7 +42,7 @@ export default () => ({
           // Does not work with symlink (Cannot read property send of undefined)
           const nuxt = await loadNuxt({ config: config.config })
           await buildNuxt(nuxt)
-          /* const childProcess = */ execaCommand('nuxt start', { all: true })
+          /* const childProcess = execaCommand('nuxt start', { all: true }) */
           /* await pEvent(
             childProcess.all,
             'data',
