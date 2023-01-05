@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/dword-design/tester-plugin-nuxt-config/compare/v1.1.6...v1.1.7) (2023-01-05)
+
+
+### Bug Fixes
+
+* foo ([6f42306](https://github.com/dword-design/tester-plugin-nuxt-config/commit/6f423066430f8acd73fae414552d8b5cf8909655))
+
 ## [1.1.6](https://github.com/dword-design/tester-plugin-nuxt-config/compare/v1.1.5...v1.1.6) (2023-01-05)
 
 
