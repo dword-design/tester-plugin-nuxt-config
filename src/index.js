@@ -38,7 +38,13 @@ export default () => ({
         if (config.nuxtVersion === 3) {
           // Loads package.json of nuxt, nuxt3 or nuxt-edge from cwd
           // Does not work with symlink (Cannot read property send of undefined)
-          const nuxt = await loadNuxt({ config: config.config })
+          const nuxt = await loadNuxt({
+            config: {
+              nitro: { logLevel: -1 },
+              telemetry: false,
+              ...config.config,
+            },
+          })
           await build(nuxt)
 
           const childProcess = execaCommand('nuxt start', { all: true })
