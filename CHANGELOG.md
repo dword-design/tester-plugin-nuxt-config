@@ -1,3 +1,11 @@
+## [1.1.9](https://github.com/dword-design/tester-plugin-nuxt-config/compare/v1.1.8...v1.1.9) (2023-01-24)
+
+
+### Bug Fixes
+
+* update dependency jsdom to v21 ([#2](https://github.com/dword-design/tester-plugin-nuxt-config/issues/2)) ([88543db](https://github.com/dword-design/tester-plugin-nuxt-config/commit/88543db9a2690a1ce41b71d226a273434a7fccc9))
+* update dependency tree-kill-promise to v3 ([#4](https://github.com/dword-design/tester-plugin-nuxt-config/issues/4)) ([a113b65](https://github.com/dword-design/tester-plugin-nuxt-config/commit/a113b6595452cb937f58a4e6c846332b62f13c49))
+
 ## [1.1.8](https://github.com/dword-design/tester-plugin-nuxt-config/compare/v1.1.7...v1.1.8) (2023-01-15)
 
 
