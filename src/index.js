@@ -21,6 +21,7 @@ export default () => ({
     const spinner = ora('Installing Nuxt 2').start()
     await execaCommand('yarn add nuxt@^2', {
       cwd: P.join('node_modules', '.cache', 'tester', 'nuxt2'),
+      stderr: 'inherit',
     })
     spinner.stop()
   },
