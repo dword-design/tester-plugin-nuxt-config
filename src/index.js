@@ -42,10 +42,15 @@ export default () => ({
             config: {
               nitro: { logLevel: -1 },
               telemetry: false,
+              vite: { logLevel: 'silent' },
               ...config.config,
             },
           })
-          await build(nuxt)
+          if (config.error) {
+            await expect(build(nuxt)).rejects.toThrow(config.error)
+          } else {
+            await build(nuxt)
+          }
 
           const childProcess = execaCommand('nuxt start', { all: true })
           await pEvent(
