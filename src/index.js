@@ -41,9 +41,9 @@ export default () => ({
           // Does not work with symlink (Cannot read property send of undefined)
           const nuxt = await loadNuxt({
             config: {
-              nitro: { logLevel: -1 },
+              nitro: { logLevel: 0 },
               telemetry: false,
-              vite: { logLevel: 'silent' },
+              vite: { logLevel: 'error' },
               ...config.config,
             },
           })
