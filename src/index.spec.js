@@ -74,7 +74,7 @@ export default tester(
         )
         expect(dom.window.document.querySelectorAll('.foo').length).toEqual(1)
       },
-    }, */
+    },
     works: {
       config: {
         plugins: ['~/plugins/foo.js'],
@@ -97,7 +97,7 @@ export default tester(
         )
         expect(dom.window.document.querySelectorAll('.foo').length).toEqual(1)
       },
-    },
+    }, */
   },
   [self()]
 )
