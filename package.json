@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.0.0",
-    "execa": "^6.1.0",
+    "execa": "^7.0.0",
     "expect": "~29.3",
     "fs-extra": "^11.1.0",
     "nuxt": "^3.0.0",
