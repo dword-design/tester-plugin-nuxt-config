@@ -63,7 +63,7 @@ export default () => ({
               console.log('killing process')
               await kill(childProcess.pid)
               console.log('killed process')
-              await new Promise(resolve => setTimeout(resolve, 5000))
+              await new Promise(resolve => setTimeout(resolve, 20000))
             }
             console.log('done with test')
           }
