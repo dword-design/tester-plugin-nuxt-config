@@ -21,6 +21,7 @@ export default () => ({
     const spinner = ora('Installing Nuxt 2').start()
     await execaCommand('yarn add nuxt@^2', {
       cwd: P.join('node_modules', '.cache', 'tester', 'nuxt2'),
+      stderr: 'inherit',
     })
     spinner.stop()
   },
@@ -40,23 +41,27 @@ export default () => ({
           // Does not work with symlink (Cannot read property send of undefined)
           const nuxt = await loadNuxt({
             config: {
-              nitro: { logLevel: -1 },
               telemetry: false,
+              vite: { logLevel: 'error' },
               ...config.config,
             },
           })
-          await build(nuxt)
+          if (config.error) {
+            await expect(build(nuxt)).rejects.toThrow(config.error)
+          } else {
+            await build(nuxt)
 
-          const childProcess = execaCommand('nuxt start', { all: true })
-          await pEvent(
-            childProcess.all,
-            'data',
-            data => data.toString() === 'Listening http://[::]:3000\n'
-          )
-          try {
-            await config.test.call(this)
-          } finally {
-            await kill(childProcess.pid)
+            const childProcess = execaCommand('nuxt start', { all: true })
+            await pEvent(
+              childProcess.all,
+              'data',
+              data => data.toString() === 'Listening http://[::]:3000\n'
+            )
+            try {
+              await config.test.call(this)
+            } finally {
+              await kill(childProcess.pid)
+            }
           }
         } else {
           // Loads @nuxt/vue-app from cwd
@@ -86,7 +91,7 @@ export default () => ({
           const Builder = nuxtImport.Builder
 
           const nuxt = new Nuxt({
-            build: { quiet: true },
+            build: { quiet: false },
             dev: false,
             telemetry: false,
             ...config.config,
