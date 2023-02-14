@@ -41,9 +41,8 @@ export default () => ({
           // Does not work with symlink (Cannot read property send of undefined)
           const nuxt = await loadNuxt({
             config: {
-              // nitro: { logLevel: 0 },
               telemetry: false,
-              // vite: { logLevel: 'error' },
+              vite: { logLevel: 'error' },
               ...config.config,
             },
           })
@@ -51,18 +50,18 @@ export default () => ({
             await expect(build(nuxt)).rejects.toThrow(config.error)
           } else {
             await build(nuxt)
-          }
 
-          const childProcess = execaCommand('nuxt start', { all: true })
-          await pEvent(
-            childProcess.all,
-            'data',
-            data => data.toString() === 'Listening http://[::]:3000\n'
-          )
-          try {
-            await config.test.call(this)
-          } finally {
-            await kill(childProcess.pid)
+            const childProcess = execaCommand('nuxt start', { all: true })
+            await pEvent(
+              childProcess.all,
+              'data',
+              data => data.toString() === 'Listening http://[::]:3000\n'
+            )
+            try {
+              await config.test.call(this)
+            } finally {
+              await kill(childProcess.pid)
+            }
           }
         } else {
           // Loads @nuxt/vue-app from cwd
