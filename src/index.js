@@ -60,8 +60,11 @@ export default () => ({
             try {
               await config.test.call(this)
             } finally {
+              console.log('killing process')
               await kill(childProcess.pid)
+              console.log('killed process')
             }
+            console.log('done with test')
           }
         } else {
           // Loads @nuxt/vue-app from cwd
