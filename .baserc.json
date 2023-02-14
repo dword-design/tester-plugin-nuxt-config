@@ -5,5 +5,6 @@
     "ignoreMatches": ["nuxt"]
   },
   "nodeVersion": 14,
-  "supportedNodeVersions": [14, 16]
+  "supportedNodeVersions": [14, 16],
+  "windows": false
 }
