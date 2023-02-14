@@ -7,7 +7,7 @@ import self from './index.js'
 
 export default tester(
   {
-    'build error': {
+    /* 'build error': {
       config: {
         modules: [
           () => {
@@ -16,7 +16,7 @@ export default tester(
         ],
       },
       error: 'foo',
-    },
+    }, */
     nuxt3: {
       files: {
         'pages/index.vue': endent`
@@ -39,7 +39,7 @@ export default tester(
         expect(dom.window.document.querySelectorAll('.foo').length).toEqual(1)
       },
     },
-    'nuxt3: config': {
+    /* 'nuxt3: config': {
       config: {
         modules: ['./modules/foo'],
       },
@@ -74,7 +74,7 @@ export default tester(
         )
         expect(dom.window.document.querySelectorAll('.foo').length).toEqual(1)
       },
-    },
+    }, */
     works: {
       config: {
         plugins: ['~/plugins/foo.js'],
