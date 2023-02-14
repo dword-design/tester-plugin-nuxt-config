@@ -91,7 +91,7 @@ export default () => ({
           const Builder = nuxtImport.Builder
 
           const nuxt = new Nuxt({
-            build: { quiet: true },
+            build: { quiet: false },
             dev: false,
             telemetry: false,
             ...config.config,
