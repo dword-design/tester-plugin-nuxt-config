@@ -34,7 +34,7 @@ export default tester(
         const dom = new JSDOM(
           (await axios.get('http://localhost:3000'))
             |> await
-            |> property('data')
+            |> property('data'),
         )
         expect(dom.window.document.querySelectorAll('.foo').length).toEqual(1)
       },
@@ -70,7 +70,7 @@ export default tester(
         const dom = new JSDOM(
           (await axios.get('http://localhost:3000'))
             |> await
-            |> property('data')
+            |> property('data'),
         )
         expect(dom.window.document.querySelectorAll('.foo').length).toEqual(1)
       },
@@ -93,11 +93,11 @@ export default tester(
         const dom = new JSDOM(
           (await axios.get('http://localhost:3000'))
             |> await
-            |> property('data')
+            |> property('data'),
         )
         expect(dom.window.document.querySelectorAll('.foo').length).toEqual(1)
       },
     },
   },
-  [self()]
+  [self()],
 )

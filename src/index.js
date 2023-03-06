@@ -15,7 +15,7 @@ export default () => ({
   before: async () => {
     await fs.outputFile(
       P.join('node_modules', '.cache', 'tester', 'nuxt2', 'package.json'),
-      JSON.stringify({})
+      JSON.stringify({}),
     )
 
     const spinner = ora('Installing Nuxt 2').start()
@@ -55,7 +55,7 @@ export default () => ({
             await pEvent(
               childProcess.all,
               'data',
-              data => data.toString() === 'Listening http://[::]:3000\n'
+              data => data.toString() === 'Listening http://[::]:3000\n',
             )
             try {
               await config.test.call(this)
@@ -72,15 +72,15 @@ export default () => ({
               '.cache',
               'tester',
               'nuxt2',
-              'node_modules'
+              'node_modules',
             ),
-            'node_modules'
+            'node_modules',
           )
 
           const nuxtImport = await import(
             `./${P.relative(
               P.dirname(fileURLToPath(import.meta.url)),
-              './node_modules/nuxt/dist/nuxt.js'
+              './node_modules/nuxt/dist/nuxt.js',
             )
               .split(P.sep)
               .join('/')}`
@@ -98,7 +98,7 @@ export default () => ({
           })
           if (config.error) {
             await expect(new Builder(nuxt).build()).rejects.toThrow(
-              config.error
+              config.error,
             )
           } else {
             await new Builder(nuxt).build()
