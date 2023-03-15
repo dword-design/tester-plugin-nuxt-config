@@ -1,3 +1,10 @@
+## [1.1.12](https://github.com/dword-design/tester-plugin-nuxt-config/compare/v1.1.11...v1.1.12) (2023-03-15)
+
+
+### Bug Fixes
+
+* update dependency execa to v7.1.1 ([8cbc38e](https://github.com/dword-design/tester-plugin-nuxt-config/commit/8cbc38e7fecd828724a14621f15858b9daf27b40))
+
 ## [1.1.11](https://github.com/dword-design/tester-plugin-nuxt-config/compare/v1.1.10...v1.1.11) (2023-02-15)
 
 
