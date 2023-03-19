@@ -1547,9 +1547,9 @@
     param-case "^3.0.3"
 
 "@dword-design/base-config-node@^1.6.0":
-  version "1.10.21"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-config-node/-/base-config-node-1.10.21.tgz#475c126f4c09fb0fcebe83daa0480a26b4c34cf4"
-  integrity sha512-TrurM0Qz4V4EY2XulwB1SL+4Nxi0WQuD2qm/DD35K6aZLKHR2RzL6ySxIpgD4mwUS4OVMXEyv7gZs4nvTr0P4w==
+  version "1.10.22"
+  resolved "https://registry.yarnpkg.com/@dword-design/base-config-node/-/base-config-node-1.10.22.tgz#74dfd72ab6479986ae78a74ecb4baba65e726e2d"
+  integrity sha512-p053OCDoXt8HU2Xxg0+7saLq+LnqBvRpcVZGk750/PyTqI5C4pJptW0OyOFr70/0+8anszkKbUSf/5JmpRq+qA==
   dependencies:
     "@babel/cli" "^7.7.5"
     "@babel/core" "^7.7.5"
@@ -1565,9 +1565,9 @@
     micromatch "^4.0.2"
 
 "@dword-design/base@^9.1.9":
-  version "9.4.37"
-  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-9.4.37.tgz#3484e088aeddc241b915b4bc85d017f1829b1ea3"
-  integrity sha512-XP5b86k2mKmJAmJf0THpayFSgUzkKbgYvyPy1nRetgMpu+ouXiR1oU7Y+9ryAiSCnFA0YjELe9GK1QMAKGiCqA==
+  version "9.4.38"
+  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-9.4.38.tgz#0cc032bf78157992ea00ffd54eeb1bf98254a1e6"
+  integrity sha512-/fi+O9fZmyRlbgpRGZs+GFa95KpyeespzgYPJ6JndZ5TdW2cLP+4uIG44P1XY1jDwMrOYYPB/rLOzSlP1sYGQw==
   dependencies:
     "@commitlint/cli" "^17.4.0"
     "@commitlint/config-conventional" "^17.4.0"
@@ -5322,9 +5322,9 @@ denque@^2.1.0:
   integrity sha512-HVQE3AAb/pxF8fQAoiqpvg9i3evqug3hoiwakOyZAwJm+6vZehbkYXZ0l4JxS+I3QxM97v5aaRNhj8v5oBhekw==
 
 depcheck-detector-execa@^3.0.4:
-  version "3.0.14"
-  resolved "https://registry.yarnpkg.com/depcheck-detector-execa/-/depcheck-detector-execa-3.0.14.tgz#48df0ca6e8f81124b06fca1ab0d8da5aac192b07"
-  integrity sha512-idz/+9bz3EKD0tjSsuCjFF7ygyPN5ezvtZ7rNUBv7HbGres68lhOZWLcFD2Vxcn1L8FVtthaIFAnFtHnnPW5pg==
+  version "3.0.15"
+  resolved "https://registry.yarnpkg.com/depcheck-detector-execa/-/depcheck-detector-execa-3.0.15.tgz#0ee064de41a1c0634518b0332e5310071386b794"
+  integrity sha512-gfuis/jq8dmA3KgV7AM7tuXCBeuoUFrXMrszDxNRt+HHFBtLj5KUitrULvdLPMEiOnNONp8eg9aYZt/F+O04EQ==
   dependencies:
     "@dword-design/functions" "^4.0.0"
     fs-extra "^11.1.0"
@@ -5350,9 +5350,9 @@ depcheck-package-name@^3.0.0:
     tagged-template-noop "^2.1.1"
 
 depcheck-parser-babel@^3.0.1:
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/depcheck-parser-babel/-/depcheck-parser-babel-3.0.7.tgz#053115b622b451c5e7e7800fd625166feecbbc54"
-  integrity sha512-/OhHk9vRCd5BzUu1FEM3RQ5wo0ikyo7Yk6CKIUJ9CYrUQgGWAFgyTlkMQSr224nooc9TcfP9pSL/wzEbq0RCfw==
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/depcheck-parser-babel/-/depcheck-parser-babel-3.0.8.tgz#b3c864099c1c366188116ec0f2f61962c615a6e5"
+  integrity sha512-eGx8GXY2dX/jZs8EDAek749CdTqx5QazIId8qNmJ1QHza0UDhXbGqqiu90OVNl0JfXjDPc8OkN+N5RLHRTnizg==
   dependencies:
     "@babel/core" "^7.7.7"
     fs-extra "^10.0.0"
