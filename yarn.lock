@@ -1547,9 +1547,9 @@
     param-case "^3.0.3"
 
 "@dword-design/base-config-node@^1.6.0":
-  version "1.10.22"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-config-node/-/base-config-node-1.10.22.tgz#74dfd72ab6479986ae78a74ecb4baba65e726e2d"
-  integrity sha512-p053OCDoXt8HU2Xxg0+7saLq+LnqBvRpcVZGk750/PyTqI5C4pJptW0OyOFr70/0+8anszkKbUSf/5JmpRq+qA==
+  version "1.10.24"
+  resolved "https://registry.yarnpkg.com/@dword-design/base-config-node/-/base-config-node-1.10.24.tgz#3306590b64538c3591f9ac3fc7469f0f4a650612"
+  integrity sha512-emDK+tevEXBHEJXxAD7niN9Mo3iugIWL/DXuOJbcwlqs4UBa6DYsvLe5J95m/s1pOml1XLTOI56O0/z2k9Y6+g==
   dependencies:
     "@babel/cli" "^7.7.5"
     "@babel/core" "^7.7.5"
@@ -1565,9 +1565,9 @@
     micromatch "^4.0.2"
 
 "@dword-design/base@^9.1.9":
-  version "9.4.38"
-  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-9.4.38.tgz#0cc032bf78157992ea00ffd54eeb1bf98254a1e6"
-  integrity sha512-/fi+O9fZmyRlbgpRGZs+GFa95KpyeespzgYPJ6JndZ5TdW2cLP+4uIG44P1XY1jDwMrOYYPB/rLOzSlP1sYGQw==
+  version "9.4.42"
+  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-9.4.42.tgz#7576ec096a4ff253ce29b48b0446ecf8a7d8e7c3"
+  integrity sha512-EQi8af/MC1UJEcm7zSVJcRQwKQ8j/V1j0ID09hNY32ak4wcUkL13/tM9myegXRDC6HHl7wckpMjHKOrtdwjIgg==
   dependencies:
     "@commitlint/cli" "^17.4.0"
     "@commitlint/config-conventional" "^17.4.0"
@@ -5322,9 +5322,9 @@ denque@^2.1.0:
   integrity sha512-HVQE3AAb/pxF8fQAoiqpvg9i3evqug3hoiwakOyZAwJm+6vZehbkYXZ0l4JxS+I3QxM97v5aaRNhj8v5oBhekw==
 
 depcheck-detector-execa@^3.0.4:
-  version "3.0.15"
-  resolved "https://registry.yarnpkg.com/depcheck-detector-execa/-/depcheck-detector-execa-3.0.15.tgz#0ee064de41a1c0634518b0332e5310071386b794"
-  integrity sha512-gfuis/jq8dmA3KgV7AM7tuXCBeuoUFrXMrszDxNRt+HHFBtLj5KUitrULvdLPMEiOnNONp8eg9aYZt/F+O04EQ==
+  version "3.0.18"
+  resolved "https://registry.yarnpkg.com/depcheck-detector-execa/-/depcheck-detector-execa-3.0.18.tgz#4319affc8862da730cab43f546dfeac513388486"
+  integrity sha512-ttsKOobl1gajUnCCexEO/7eRqQCPiM6u/nfKnQQ5QF6vAC950qS+dFbT2dEE5g6yqwvPpLap3xAVWaa6UtUaxw==
   dependencies:
     "@dword-design/functions" "^4.0.0"
     fs-extra "^11.1.0"
@@ -5350,9 +5350,9 @@ depcheck-package-name@^3.0.0:
     tagged-template-noop "^2.1.1"
 
 depcheck-parser-babel@^3.0.1:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/depcheck-parser-babel/-/depcheck-parser-babel-3.0.8.tgz#b3c864099c1c366188116ec0f2f61962c615a6e5"
-  integrity sha512-eGx8GXY2dX/jZs8EDAek749CdTqx5QazIId8qNmJ1QHza0UDhXbGqqiu90OVNl0JfXjDPc8OkN+N5RLHRTnizg==
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/depcheck-parser-babel/-/depcheck-parser-babel-3.0.9.tgz#139cc99191d5e1eca240563e6bcf7b27bfbd70f7"
+  integrity sha512-BCTZpGwDoKiOulEDa+qEpl3UE8PaRYdpIbHD3RouIOHT++iCaiUqLGff3SHhH8M6RZpOMo7G5sTUYrAIm6PJDA==
   dependencies:
     "@babel/core" "^7.7.7"
     fs-extra "^10.0.0"
@@ -6413,9 +6413,9 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
     homedir-polyfill "^1.0.1"
 
 expect-mocha-image-snapshot@^3.0.1:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/expect-mocha-image-snapshot/-/expect-mocha-image-snapshot-3.0.6.tgz#ade1a15da2d867054351ad3ed2fb2af77d7cd42b"
-  integrity sha512-ZIMd+GHKpbwsV4GC/4m7RgOUImrBqAsow8dv7/X+ElICPaL6X0KsbldlUOW8weGUZApf6eyiXyXeodHe4qGuSw==
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/expect-mocha-image-snapshot/-/expect-mocha-image-snapshot-3.0.8.tgz#21913b8fd07187d62dfe8f97a7524b6556b6f4ee"
+  integrity sha512-ZkluuTTPQdT1SQd6BAUTFU+NBCkX3WOSuIgzjZh75R4gQnoXlQa85HAIcqBDTumLaEFHhttGF6lT+CY0/3w7WQ==
   dependencies:
     jest-image-snapshot "^4.4.0"
     jest-snapshot "^27.0.0"
