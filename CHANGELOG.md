@@ -1,3 +1,10 @@
+## [1.1.22](https://github.com/dword-design/tester-plugin-nuxt-config/compare/v1.1.21...v1.1.22) (2023-03-20)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/base to v9.4.42 ([d40051b](https://github.com/dword-design/tester-plugin-nuxt-config/commit/d40051b7a0830eb14119bdf4d0207a304baf4769))
+
 ## [1.1.21](https://github.com/dword-design/tester-plugin-nuxt-config/compare/v1.1.20...v1.1.21) (2023-03-19)
 
 
