@@ -1,3 +1,10 @@
+## [1.1.23](https://github.com/dword-design/tester-plugin-nuxt-config/compare/v1.1.22...v1.1.23) (2023-03-20)
+
+
+### Bug Fixes
+
+* update dependency fs-extra to v11.1.1 ([ed2b0d4](https://github.com/dword-design/tester-plugin-nuxt-config/commit/ed2b0d425fdb36bfbf5946971d6def266b7e47c0))
+
 ## [1.1.22](https://github.com/dword-design/tester-plugin-nuxt-config/compare/v1.1.21...v1.1.22) (2023-03-20)
 
 
