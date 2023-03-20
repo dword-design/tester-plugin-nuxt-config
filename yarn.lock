@@ -1565,9 +1565,9 @@
     micromatch "^4.0.2"
 
 "@dword-design/base@^9.1.9":
-  version "9.4.42"
-  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-9.4.42.tgz#7576ec096a4ff253ce29b48b0446ecf8a7d8e7c3"
-  integrity sha512-EQi8af/MC1UJEcm7zSVJcRQwKQ8j/V1j0ID09hNY32ak4wcUkL13/tM9myegXRDC6HHl7wckpMjHKOrtdwjIgg==
+  version "9.4.45"
+  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-9.4.45.tgz#20a1fc77f47e567c8f755bc2b53daf8a4009a54a"
+  integrity sha512-8vdeYWxfv7ygTqy58Qu1f7f1/rbaecUbjK6Y4CbHOeNLQ7Xy2xyY/6G0Ex38Tnq3A5J9mgo7JlcSiNveL1kxiw==
   dependencies:
     "@commitlint/cli" "^17.4.0"
     "@commitlint/config-conventional" "^17.4.0"
@@ -11990,9 +11990,9 @@ prettier-linter-helpers@^1.0.0:
     fast-diff "^1.1.2"
 
 prettier@^2.1.1, prettier@^2.2.1:
-  version "2.8.4"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.4.tgz#34dd2595629bfbb79d344ac4a91ff948694463c3"
-  integrity sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==
+  version "2.8.5"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.5.tgz#3dd8ae1ebddc4f6aa419c9b64d8c8319a7e0d982"
+  integrity sha512-3gzuxrHbKUePRBB4ZeU08VNkUcqEHaUaouNt0m7LGP4Hti/NuB07C7PPTM/LkWqXoJYJn2McEo5+kxPNrtQkLQ==
 
 pretty-bytes@^6.1.0:
   version "6.1.0"
