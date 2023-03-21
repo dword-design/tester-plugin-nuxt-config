@@ -1,3 +1,10 @@
+## [1.1.25](https://github.com/dword-design/tester-plugin-nuxt-config/compare/v1.1.24...v1.1.25) (2023-03-21)
+
+
+### Bug Fixes
+
+* update dependency tree-kill-promise to v3.0.9 ([293547b](https://github.com/dword-design/tester-plugin-nuxt-config/commit/293547bad4f4571ca34ab37c14294a814c5df015))
+
 ## [1.1.24](https://github.com/dword-design/tester-plugin-nuxt-config/compare/v1.1.23...v1.1.24) (2023-03-21)
 
 
