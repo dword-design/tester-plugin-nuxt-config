@@ -1,3 +1,10 @@
+## [1.1.26](https://github.com/dword-design/tester-plugin-nuxt-config/compare/v1.1.25...v1.1.26) (2023-03-24)
+
+
+### Bug Fixes
+
+* update dependency ora to v6.3.0 ([2562fe6](https://github.com/dword-design/tester-plugin-nuxt-config/commit/2562fe679429f63fd37290fcaf4c611dd5733a69))
+
 ## [1.1.25](https://github.com/dword-design/tester-plugin-nuxt-config/compare/v1.1.24...v1.1.25) (2023-03-21)
 
 
