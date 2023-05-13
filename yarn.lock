@@ -1382,7 +1382,17 @@
     "@dword-design/functions" "^4.0.0"
     babel-plugin-module-resolver "^4.0.0"
 
-"@dword-design/functions@^4.0.0", "@dword-design/functions@^4.0.7", "@dword-design/functions@^4.1.0":
+"@dword-design/functions@^4.0.0":
+  version "4.1.7"
+  resolved "https://registry.yarnpkg.com/@dword-design/functions/-/functions-4.1.7.tgz#40c8aa7ce0e1c0e345b080ebdc05f3b68d53259d"
+  integrity sha512-kc7bzBKZasf0icxKldgB7dkpd1mcEQkPz8c0BP5Wuxy63bMYs+kNWbywFT+xNBWDT6N9cdTczHwBuVBgc8ZU0A==
+  dependencies:
+    "@dword-design/endent" "^1.0.0"
+    delay "^5.0.0"
+    lodash "^4.17.15"
+    tinycolor2 "^1.4.1"
+
+"@dword-design/functions@^4.0.7", "@dword-design/functions@^4.1.0":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@dword-design/functions/-/functions-4.1.0.tgz#98473461ddbd986bae884e591113653e30001369"
   integrity sha512-rPNYH6mADaPMFRoROaHSvnFWExacY7t9oq45Jw++37mqsQay0IX4aHqfAsmWbJPU/wyx1LkqKvNI+mizzpjpYA==
@@ -1419,9 +1429,9 @@
   integrity sha512-hqREdzS0UiNaGxm50Kl/PdZCjr+jhID581Y/csnAc8BFU6+fulL6uAEOUCQUm59ejtnf9ifDCfSKrMEK+MvvbA==
 
 "@dword-design/tester@^2.0.11":
-  version "2.0.12"
-  resolved "https://registry.yarnpkg.com/@dword-design/tester/-/tester-2.0.12.tgz#58f6d81aff29368367bbb86cae4b44e043092a6b"
-  integrity sha512-nf3lUQ5jUEQwzp5AhdfPPZMzFFUyWaEGjbuqwZ51pe4uLlrf2/hqaCIkXpaSLJ1ev/6FbV6/2Ax+FeyoVTCNMw==
+  version "2.0.19"
+  resolved "https://registry.yarnpkg.com/@dword-design/tester/-/tester-2.0.19.tgz#169d42a9b6fe925110a10e2e20a8168652c6ca01"
+  integrity sha512-dZGmY9YjxKNFiyWuAz0UA7AYledVlc4PZmRHK4WT45kYGT9KkWM67NPr0L7OiLITyYVGRV6igey/77FB1Rjc8A==
   dependencies:
     "@dword-design/functions" "^4.0.0"
 
