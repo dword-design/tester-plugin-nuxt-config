@@ -1382,7 +1382,17 @@
     "@dword-design/functions" "^4.0.0"
     babel-plugin-module-resolver "^4.0.0"
 
-"@dword-design/functions@^4.0.0", "@dword-design/functions@^4.0.7", "@dword-design/functions@^4.1.0":
+"@dword-design/functions@^4.0.0":
+  version "4.1.7"
+  resolved "https://registry.yarnpkg.com/@dword-design/functions/-/functions-4.1.7.tgz#40c8aa7ce0e1c0e345b080ebdc05f3b68d53259d"
+  integrity sha512-kc7bzBKZasf0icxKldgB7dkpd1mcEQkPz8c0BP5Wuxy63bMYs+kNWbywFT+xNBWDT6N9cdTczHwBuVBgc8ZU0A==
+  dependencies:
+    "@dword-design/endent" "^1.0.0"
+    delay "^5.0.0"
+    lodash "^4.17.15"
+    tinycolor2 "^1.4.1"
+
+"@dword-design/functions@^4.0.7", "@dword-design/functions@^4.1.0":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@dword-design/functions/-/functions-4.1.0.tgz#98473461ddbd986bae884e591113653e30001369"
   integrity sha512-rPNYH6mADaPMFRoROaHSvnFWExacY7t9oq45Jw++37mqsQay0IX4aHqfAsmWbJPU/wyx1LkqKvNI+mizzpjpYA==
@@ -10633,9 +10643,9 @@ os-tmpdir@~1.0.2:
   integrity sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g==
 
 output-files@^2.0.0, output-files@^2.0.10:
-  version "2.0.19"
-  resolved "https://registry.yarnpkg.com/output-files/-/output-files-2.0.19.tgz#a69e4ec44639711a4798be2827946a7a50b8d11d"
-  integrity sha512-vjEax9A48V+Z7mMOYpGadVq5VIzI5temXtJ2JRKsaLvIZTznFz8GHOVNarbxDs6zeUyqQi7FNbV3MsR1V6XrhA==
+  version "2.0.28"
+  resolved "https://registry.yarnpkg.com/output-files/-/output-files-2.0.28.tgz#3427f8daf54eb9ac03f068b14c1e82a9cd681afa"
+  integrity sha512-+HpNeuSVXAyKvDxBI+3l+xcI9KbOK/KpW1CrAVMoVsBFODEPwTh68h9OogZpPeYIw2etf1UdWrnhFB/MQr78JA==
   dependencies:
     "@dword-design/functions" "^4.0.0"
     fs-extra "^11.1.0"
